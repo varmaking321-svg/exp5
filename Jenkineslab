@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'javac hello.py'
+                sh 'python hello.py'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'java hello'
+                sh 'python hello'
             }
         }
     }
